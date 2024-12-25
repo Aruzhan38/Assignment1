@@ -15,6 +15,8 @@ public class Student extends Person {
     public void addGrade(int grade) {
         if (grade >=0 && grade <=100) {
             grades.add(grade);
+        } else {
+            System.out.println("!!!between 0 and 100!!!");
         }
     }
 

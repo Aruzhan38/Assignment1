@@ -1,5 +1,5 @@
 Harry Potter 21 true 78 89 99 51
-Ron Qeasley 20 false 78 89 75 63 82
+Ron Weasley 20 true 78 89 75 63 82
 Hermione Granger 19 false 100 99 95 98 100 96 97
-Luna Lovegood 20 true 46 87 67 79 96 58 83
-Draco Malfoy 19 flase 21 45 0 9 51 43
+Luna Lovegood 20 false 46 87 67 79 96 58 83
+Draco Malfoy 19 true 21 45 0 9 51 43

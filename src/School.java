@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class School {
@@ -12,6 +13,10 @@ public class School {
         members.add(person);
     }
 
+    public List<Person> getMembers() {
+        return members;
+    }
+
     @Override
     public String toString() {
         StringBuilder result = new StringBuilder();
@@ -20,5 +25,10 @@ public class School {
         }
         return result.toString();
     }
+
+    public void sortMembersBySurname() {
+        members.sort(Comparator.comparing(Person::getSurname));
+    }
 }
+
 
