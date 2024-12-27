@@ -19,7 +19,7 @@ public class Main {
 
                 if (Data.length < 4) {
                     System.out.println("Invalid student data: " + line);
-                    continue; // Skip this line
+                    continue;
                 }
 
                 String name = Data[0];
