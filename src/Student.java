@@ -22,7 +22,7 @@ public class Student extends Person {
 
     public double calculateGPA() {
         if (grades.isEmpty())
-            return 0.0;
+            return 0;
         int sum = 0;
         for (int grade: grades) {
             sum = sum + grade;

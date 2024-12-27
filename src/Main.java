@@ -34,8 +34,8 @@ public class Main {
                 }
 
                 school.addMember(student);
-            } catch (Exception e) {
-                System.out.println("Error parsing student: " + line + " (" + e.getMessage() + ")");
+            } catch (Exception error) {
+                System.out.println("Error parsing student: " + line + " (" + error.getMessage() + ")");
             }
         }
         studentScanner.close();
@@ -63,8 +63,8 @@ public class Main {
 
                 Teacher teacher = new Teacher(name, surname, age, gender, subject, yearsOfExperience, salary);
                 school.addMember(teacher);
-            } catch (Exception e) {
-                System.out.println("Error parsing teacher: " + line + " (" + e.getMessage() + ")");
+            } catch (Exception error) {
+                System.out.println("Error parsing teacher: " + line + " (" + error.getMessage() + ")");
             }
         }
         teacherScanner.close();
