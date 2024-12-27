@@ -25,7 +25,7 @@ public class Teacher extends Person {
     @Override
     public String toString() {
         return super.toString() +
-                " I teach " + subject;
+                " I teach " + subject + ".";
     }
 }
 

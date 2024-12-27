@@ -1,10 +1,8 @@
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        ArrayList<Person> members = new ArrayList<>();
         School school = new School();
 
         File studentFile = new File("C:\\Users\\асер\\IdeaProjects\\Assignment1\\students.txt");
@@ -80,14 +78,14 @@ public class Main {
         for (Person member : school.getMembers()) {
             if (member instanceof Student) {
                 Student student = (Student) member;
-                System.out.println(student.toString() + " GPA: " + student.calculateGPA());
+                System.out.println(student + " GPA: " + student.calculateGPA());
             } else if (member instanceof Teacher) {
                 Teacher teacher = (Teacher) member;
                 if (teacher.getYearsOfExperience() > 10) {
                     teacher.giveRaise(10);
-                    System.out.println(teacher.toString() + " New Salary: " + teacher.getSalary());
+                    System.out.println(teacher + " New Salary: " + teacher.getSalary());
                 } else {
-                    System.out.println(teacher.toString() + " Salary remains: " + teacher.getSalary());
+                    System.out.println(teacher + " Salary remains: " + teacher.getSalary());
                 }
             }
         }
