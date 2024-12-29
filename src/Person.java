@@ -15,7 +15,7 @@ public class Person {
         this(name);
         this.name = name;
         this.surname = surname;
-        this.age =age;
+        this.age = age;
         this.gender = gender;
     }
 

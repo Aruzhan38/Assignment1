@@ -6,6 +6,9 @@ public class Student extends Person {
     private int studentID;
     private List<Integer> grades;
 
+    public Student () {
+
+    }
     public Student (String name, String surname, int age, boolean gender) {
         super(name, surname, age, gender);
         this.studentID = idCounter++;
