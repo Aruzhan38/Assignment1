@@ -4,15 +4,12 @@ public class Person {
     private int age;
     private boolean gender;
 
-    public Person(){
+    public Person() {
 
     }
-    public Person(String name) {
-        this();
-        this.name = name;
-    }
+
     public Person(String name, String surname, int age, boolean gender){
-        this(name);
+        this();
         this.name = name;
         this.surname = surname;
         this.age = age;
